@@ -49,7 +49,7 @@ async def handle_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     mime_type = audio_source.mime_type
 
     await message.chat.send_action(ChatAction.TYPING)
-    status_message = await message.reply_text("Слушаю и расшифровываю...")
+    status_message = await message.reply_text("Я работаю.")
 
     try:
         telegram_file = await audio_source.get_file()
